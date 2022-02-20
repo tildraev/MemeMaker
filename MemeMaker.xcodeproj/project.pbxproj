@@ -25,6 +25,9 @@
 		D205F5A827BF1B190057BBC6 /* MemeSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D205F5A727BF1B190057BBC6 /* MemeSearchViewModel.swift */; };
 		D205F5AA27BF34720057BBC6 /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D205F5A927BF34720057BBC6 /* impact.ttf */; };
 		D20758E227C1F29000BB55B4 /* MemeMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20758E127C1F29000BB55B4 /* MemeMakerTests.swift */; };
+		D20758EA27C2017B00BB55B4 /* MemeEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20758E827C2017B00BB55B4 /* MemeEditor.storyboard */; };
+		D20758EC27C201A700BB55B4 /* MemeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20758EB27C201A700BB55B4 /* MemeList.storyboard */; };
+		D20758EF27C201C700BB55B4 /* MemeSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20758ED27C201C700BB55B4 /* MemeSearch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		D205F5A927BF34720057BBC6 /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = impact.ttf; sourceTree = "<group>"; };
 		D20758DF27C1F29000BB55B4 /* MemeMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20758E127C1F29000BB55B4 /* MemeMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMakerTests.swift; sourceTree = "<group>"; };
+		D20758E927C2017B00BB55B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MemeMaker/Base.lproj/MemeEditor.storyboard; sourceTree = "<group>"; };
+		D20758EB27C201A700BB55B4 /* MemeList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemeList.storyboard; sourceTree = "<group>"; };
+		D20758EE27C201C700BB55B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MemeMaker/Base.lproj/MemeSearch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,7 @@
 		D205F5A027BF0FF40057BBC6 /* Meme List */ = {
 			isa = PBXGroup;
 			children = (
+				D20758EB27C201A700BB55B4 /* MemeList.storyboard */,
 				D205F59327BF004D0057BBC6 /* MemeListViewController.swift */,
 				D205F59527BF01460057BBC6 /* MemeListViewModel.swift */,
 				D205F59727BF04FC0057BBC6 /* MemeTableViewCell.swift */,
@@ -163,6 +170,7 @@
 		D205F5A127BF0FFE0057BBC6 /* Meme Editor */ = {
 			isa = PBXGroup;
 			children = (
+				D20758E827C2017B00BB55B4 /* MemeEditor.storyboard */,
 				D205F59E27BF0FDF0057BBC6 /* MemeEditorViewController.swift */,
 				D205F5A227BF101A0057BBC6 /* MemeEditorViewModel.swift */,
 			);
@@ -172,6 +180,7 @@
 		D205F5A427BF19170057BBC6 /* Meme Search */ = {
 			isa = PBXGroup;
 			children = (
+				D20758ED27C201C700BB55B4 /* MemeSearch.storyboard */,
 				D205F5A527BF19240057BBC6 /* MemeSearchViewController.swift */,
 				D205F5A727BF1B190057BBC6 /* MemeSearchViewModel.swift */,
 			);
@@ -275,8 +284,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20758EF27C201C700BB55B4 /* MemeSearch.storyboard in Resources */,
 				D205F5AA27BF34720057BBC6 /* impact.ttf in Resources */,
 				D205F58227BEFB910057BBC6 /* LaunchScreen.storyboard in Resources */,
+				D20758EC27C201A700BB55B4 /* MemeList.storyboard in Resources */,
+				D20758EA27C2017B00BB55B4 /* MemeEditor.storyboard in Resources */,
 				D205F57F27BEFB910057BBC6 /* Assets.xcassets in Resources */,
 				D205F57D27BEFB8F0057BBC6 /* Main.storyboard in Resources */,
 			);
@@ -345,6 +357,22 @@
 				D205F58127BEFB910057BBC6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D20758E827C2017B00BB55B4 /* MemeEditor.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D20758E927C2017B00BB55B4 /* Base */,
+			);
+			name = MemeEditor.storyboard;
+			sourceTree = "<group>";
+		};
+		D20758ED27C201C700BB55B4 /* MemeSearch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D20758EE27C201C700BB55B4 /* Base */,
+			);
+			name = MemeSearch.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
